@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+
+
+var search;
+var dateStart;
+var dateEnd; 
+var listLimit;
+
+
+
+$("button").on("click", function() {
+ 
+
+
+
+var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+url += '?' + $.param({
+  'api-key': "f1190384efd544f1ad91977bc195513e",
+  'q': search,
+  'begin_date': dateStart,
+  'end_date': dateEnd,
+});
+    $.ajax({
+    url: url,
+    method: 'GET',
+    })
+    
+    .done(function(response) {
+    console.log(response);
+    var results = response.data;
+    console.log(results);
+    });
+
+});

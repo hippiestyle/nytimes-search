@@ -7,7 +7,10 @@ $("#submit-search-btn").on("click", function() {
 console.log(search + dateStart + dateEnd + pageLimit);
   // get all form data and transfer to variable
 
-  
+  $
+$("#clear-btn").on("click", function () {
+  $("#search-field").val(); 
+});
 
   
 
@@ -29,19 +32,21 @@ $.ajax({
 .done(function(response) {
   
   
-  for (var i = 0; i < (pageLimit*10); i++) {
-
-      console.log(response);
-      console.log(response.response.docs[i].headline.main);
-      var articleContainer  = $("<div>").addClass("article-container");
-      var printHeadline = $("<div>").html(response.response.docs[i].headline.print_headline);
-      var main = $("<div>").html(response.response.docs[i].headline.main);
-      var author = $("<div>").html(response.response.docs[i].byline.original);
-      var dateWritten = $("<div>").html(response.response.docs[i].pub_date);
+  for (var i = 0; i < (pageLimit*3); i++) {
+    
+    console.log(response);
+    console.log(response.response.docs[i].headline.main);
+    
+    var articleContainer  = $("<div>").addClass("article-container");
+      var printHeadline = $("<p>").text(response.response.docs[i].headline.print_headline);
+      var main = $("<p>").text(response.response.docs[i].headline.main);
+      var author = $("<p>").text(response.response.docs[i].byline.original);
+      var dateWritten = $("<p>").text(response.response.docs[i].pub_date);
 
 
       articleContainer.append(printHeadline, main, author, dateWritten);
-      $("#overall-container").append(articleContainer);
+
+      $("#results-field").append(articleContainer);
       };
   
     });

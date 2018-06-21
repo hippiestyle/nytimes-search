@@ -86,3 +86,10 @@
     height: 10px; 
 
 }
+
+p {
+    padding: 20px; 
+    color: black; 
+    background-color: grey; 
+    font-family: 'Inconsolata';
+}
