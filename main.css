@@ -75,14 +75,14 @@
 }
 
 #footer {
-    width: 100%; 
+    width: 77.5%; 
     background-color: navy;
     position: fixed;
     bottom: 0; 
     color: whitesmoke; 
     text-align: center;
     padding: 20px;  
-    left: -20px; 
+    margin-left: 150px; 
     height: 10px; 
 
 }
