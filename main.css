@@ -1,3 +1,88 @@
 #title {
+    width: 80.5%;
+    height: 100px; 
+    padding-top: 80px; 
+    background-color: navy;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 150px; 
+    font-size: 100px; 
+    font-family: 'Inconsolata', monospace;
+}
+#search-field {
+    width: 80%;
+    height: 450px; 
+    margin-top: 30px; 
+    border-width: 5px; 
+    border-color: navy;
+    margin-left: 150px; 
+    border-style: solid;
+}
+
+#search-headers {
+    margin-left: 30px; 
+    color: navy; 
+}
+
+#site-search {
+    margin-top: 10px; 
+    margin-left: 30px; 
+    margin-bottom: 10px; 
+    width: 80%; 
+}
+
+#start-year-search {
+    margin-top: 10px; 
+    margin-left: 30px; 
+    margin-bottom: 10px; 
+    width: 80%; 
+}
+
+#end-year-search {
+    margin-top: 10px; 
+    margin-left: 30px; 
+    margin-bottom: 10px; 
+    width: 80%; 
+}
+#results-num {
+    margin-top: 10px; 
+    margin-left: 30px; 
+    margin-bottom: 10px; 
+    width: 80%; 
+}
+
+#submit-search-btn {
+    margin-top: 10px; 
+    margin-left: 30px; 
+    margin-bottom: 10px; 
+}
+
+#results-field {
+    margin-top: 10px; 
+    width: 80%;
+    height: 600px; 
+    border-style: solid;
+    border-color: navy;
+    border-width: 5px; 
+    margin-left: 150px; 
+}
+
+.article-container {
+    width: 80%;
+    color: whitesmoke;
+    background-color: navy; 
+    height: 30px; 
+}
+
+#footer {
+    width: 77.5%; 
+    background-color: navy;
+    position: fixed;
+    bottom: 0; 
+    color: whitesmoke; 
+    text-align: center;
+    padding: 20px;  
+    margin-left: 150px; 
+    height: 10px; 
 
 }
